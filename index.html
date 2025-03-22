@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Full-Screen Navbar -->
+<nav class="navbar">
+    <div class="logo">WeatherApp</div>
+    <ul class="nav-links" id="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+</nav>
+
+
+    <!-- Main Content -->
+    <div class="container">
+        <h1 class="title">Check the Weather</h1>
+        <p class="subtitle">Get real-time weather updates for any city worldwide.</p>
+        
+        <input type="text" id="city-input" placeholder="Enter city name">
+        <button id="search-btn">Search</button>
+
+        <div class="weather-card">
+            <div class="weather-header">
+                <h2 id="city-name">City Name</h2>
+                <p id="date">Date</p>
+            </div>
+            <div class="weather-info">
+                <img src="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" alt="Weather Icon" class="weather-icon" id="weather-icon">
+                <h1 id="temperature">--°C</h1>
+                <p id="description">Weather</p>
+            </div>
+            <div class="weather-details">
+                <p>Humidity: <span id="humidity">--%</span></p>
+                <p>Wind Speed: <span id="wind-speed">-- km/h</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 WeatherApp | All Rights Reserved</p>
+        <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+        </ul>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
